@@ -15,7 +15,7 @@ import { RouterLink } from 'vue-router'
 <style scoped>
 nav {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     align-items: center;
     padding: 20px;
     background-image: url('@/assets/tapetBlommig.webp');
