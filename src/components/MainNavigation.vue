@@ -10,6 +10,7 @@
 </template>
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
+
 </script>
 <style scoped>
 nav {
@@ -17,17 +18,19 @@ nav {
     justify-content: right;
     align-items: center;
     padding: 20px;
-    background-color: #FFF7DB;
-
-
+    background-image: url('@/assets/tapetBlommig.webp');
+    border-bottom: 2px solid;
 }
 
 a {
     padding: 10px;
     border-radius: 5px;
+    background-color: rgb(230, 220, 215, 0.75);
     color: #000;
     text-decoration: none;
     font-family: 'Stars & Love', sans-serif;
+    font-weight: 600;
+
 }
 
 .router-link-exact-active {
