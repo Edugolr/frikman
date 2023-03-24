@@ -15,7 +15,7 @@ import { RouterLink } from 'vue-router'
 <style scoped>
 nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
     padding: 20px;
     background-image: url('@/assets/tapetBlommig.webp');
@@ -24,7 +24,7 @@ nav {
 
 a {
     padding: 10px;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     background-color: rgb(230, 220, 215, 0.75);
     color: #000;
     text-decoration: none;
@@ -35,6 +35,6 @@ a {
 
 .router-link-exact-active {
     background-color: #000;
-    color: #FFF7DB;
+    color: var(--color-primary);
 }
 </style>

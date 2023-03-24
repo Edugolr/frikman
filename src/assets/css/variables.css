@@ -1,12 +1,26 @@
 :root {
     /* Colors */
-    --color-primary: #f00;
+    --color-primary: #FFF7DB;
     --color-secondary: #0f0;
-    --color-tertiary: #00f;
-    --color-h2: #A82D65;
+    --color-tertiary: #A82D65;
+    --color-h2: var(--color-tertiary);
 
     /* Fonts */
     --font-primary: 'Glacial Indifference', sans-serif;
     --font-secondary: 'Cormorant Garamond', serif;
+
+    /* Border Radius */
+    --border-radius-small: 2px;
+    --border-radius: 4px;
+    --border-radius-large: 8px;
+    --border-radius-rounded: 50%;
+
+    /* Spacing */
+    --spacing-xxs: 4px;
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 32px;
+    --spacing-xl: 48px;
 
 }

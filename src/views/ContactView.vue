@@ -46,7 +46,7 @@ const piaImage = new URL('@/assets/pia.jpg', import.meta.url).href
 </script>
 <style  scoped>
 .profile-image {
-    border-radius: 50%;
+    border-radius: var(--border-radius-rounded);
     width: 7rem;
     height: 7rem;
     transition: all 1s ease;
@@ -69,10 +69,10 @@ const piaImage = new URL('@/assets/pia.jpg', import.meta.url).href
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 1rem;
-    border-radius: 5px;
-    background-color: #fff;
-    margin: 1rem;
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius);
+    background-color: var(--color-primary);
+    margin: var(--spacing-sm);
     transition: all 0.5s ease;
     box-shadow: 5px 6px 10px -1px rgba(0, 0, 0, 0.35);
 }
