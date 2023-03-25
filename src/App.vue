@@ -17,7 +17,7 @@ import MainNavigation from '@/components/MainNavigation.vue';
 body {
   margin: 0;
   height: 100vh;
-  background-color: #FFF7DB;
+  background-color: var(--color-primary);
   font-family: var(--font-primary);
   font-size: 16px;
   background-image: url(/src/assets/logo.svg);

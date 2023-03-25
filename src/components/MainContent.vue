@@ -4,7 +4,6 @@
     </div>
 </template>
 <script setup lang="ts">
-const logo = new URL('@/assets/logo.svg', import.meta.url).href
 </script>
 <style scoped>
 .main-content {

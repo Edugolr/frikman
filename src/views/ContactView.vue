@@ -3,77 +3,26 @@
         <h1>Kontakter</h1>
         <div style="display: flex;">
             <section>
-                <div class="card">
-                    <img class="profile-image" :src="piaImage" alt="pari">
-                    <div class="profile-info">
-                        <h2>Toastmadame</h2>
-                        <p>Pia Bergenzaun</p>
-                        <p><a href="tel:+">0704-45 72 22</a></p>
-                        <p><a href="mailto:pbergenzaun@gmail.com?subject=Bröllop PC">pbergenzaun@gmail.com</a></p>
-                    </div>
-                </div>
+                <ContactCard :imageSrc="piaImage" imageAlt="pia bild" title="Toastmadame" name="Pia Bergenzaun"
+                    email="pbergenzaun@gmail.com" phone="0704-45 72 22" emailSubject="Bröllop PC" />
             </section>
             <section>
-                <div class="card">
-                    <img class="profile-image" :src="pariImage" alt="pari">
-                    <div class="profile-info">
-                        <h2>Bruden</h2>
-                        <p>Pari Fröjd</p>
-                        <p><a href="tel:0735242260">0735-24 22 60</a></p>
-                        <p><a href="mailto:parichatfrojd@hotmail.com?subject=Bröllop">parichatfrojd@hotmail.com</a></p>
-                    </div>
-                </div>
+                <ContactCard :imageSrc="pariImage" imageAlt="pari bild" title="Bruden" name="Pari Fröjd"
+                    email="parichatfrojd@hotmail.com" phone="0735-24 22 60" emailSubject="Bröllop" />
             </section>
             <section>
-                <div class="card">
-                    <img class="profile-image" :src="christoferImage" alt="christofer">
-                    <div class="profile-info">
-                        <h2>Brudgummen</h2>
-                        <p>Christofer Wikman</p>
-                        <p><a href="tel:0733888157">0733-88 81 57</a></p>
-                        <p><a href="mailto:christofer.wikman@gmail.com?subject=Bröllop">christofer.wikman@gmail.com</a></p>
-                    </div>
-                </div>
+                <ContactCard :imageSrc="christoferImage" imageAlt="christofer bild" title="Bruden" name="Christofer Wikman"
+                    email="christofer.wikman@gmail.com" phone="0733888157" emailSubject="Bröllop" />
             </section>
         </div>
     </div>
 </template>
 <script setup lang="ts">
+import ContactCard from '@/components/ContactCard.vue';
+
 const christoferImage = new URL('@/assets/christofer.jpg', import.meta.url).href
-const pariImage = new URL('@/assets/pari.jpeg', import.meta.url).href
 const piaImage = new URL('@/assets/pia.jpg', import.meta.url).href
+const pariImage = new URL('@/assets/pari.jpeg', import.meta.url).href
 
 </script>
-<style  scoped>
-.profile-image {
-    border-radius: var(--border-radius-rounded);
-    width: 7rem;
-    height: 7rem;
-    transition: all 1s ease;
-    filter: grayscale(100%);
-}
-
-.profile-image:hover {
-    transform: rotateY(180deg);
-}
-
-.profile-info {
-    z-index: 1;
-
-}
-
-.card {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: var(--spacing-sm);
-    border-radius: var(--border-radius);
-    background-color: var(--color-primary);
-    margin: var(--spacing-sm);
-    transition: all 0.5s ease;
-    box-shadow: 5px 6px 10px -1px rgba(0, 0, 0, 0.35);
-}
-</style>
+<style scoped></style>
